@@ -11,6 +11,17 @@
 		<meta name="keywords" content="agency, business, corporate, creative, html5, modern, multipurpose, One Page, parallax, startup ">		
 		<!-- SITE TITLE -->
 		<title>Munshi Delivery Services</title>	
+		<script>
+    // ইউআরএল থেকে .html বা index.html রিমুভ করার স্ক্রিপ্ট
+    var path = window.location.pathname;
+    if (path.endsWith('.html')) {
+        var newPath = path.replace(/\.html$/, '');
+        if (newPath.endsWith('/index')) {
+            newPath = newPath.replace(/\/index$/, '/');
+        }
+        window.history.replaceState(null, '', newPath);
+    }
+</script>
 		<!-- favicon -->
 		<link rel="icon" type="image/png" sizes="any" href="assets/img/favicon.png">
 		<!-- Latest Bootstrap min CSS -->
