@@ -137,7 +137,9 @@
 				</nav>
 			  </div>
 			   <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;">
-			   <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+			   <a href="#" class="site-menu-toggle js-menu-toggle float-right" aria-label="Toggle Navigation Menu">
+  					<span class="icon-menu h3"></span>
+				</a>
 			   </div>
 			</div>
 		  </div>
@@ -145,7 +147,7 @@
 	   <!-- END NAVBAR-->				
 	
 		<!-- START HOME -->
-		<section data-stellar-background-ratio="0.3" id="home" class="home_bg" style="background-image: url(assets/img/bg/home-bg.jpg);  background-size:cover; background-position: center center;">
+		<section data-stellar-background-ratio="0.3" id="home" class="home_bg" style="background-image: url(assets/img/bg/home-bg.webp);  background-size:cover; background-position: center center;">
 			<div class="container">
 				<div class="row">
 				  <div class="col-lg-12 col-sm-12 col-xs-12 text-center">
@@ -281,70 +283,89 @@
 		<!-- END WHY CHOOSE US-->	
 
 		<!-- START PORTFOLIO -->
-		<section id="portfolio" class="portfolio_area section-padding">
-		   <div class="container-fluid">
-				<div class="section-title text-center">
-					<h2>Our Happy Team</h2>
-					<p style="text-align: justify;">Our happy team is the heart of our success. We work together with dedication, passion, and teamwork to deliver the best services to our customers. Every member is committed to providing fast, reliable, and high-quality service, ensuring customer satisfaction at every step.</p>
-				</div>	
-				<div class="col-lg-12 text-center">
-					<div class="portfolio_filter">
-						<ul>
-							<li class="active filter" data-filter="all">All</li>
-							<li class="filter" data-filter=".branding">	Snoonu</li>
-							<li class="filter" data-filter=".webtemplate">Talabat</li>
-							<li class="filter" data-filter=".seo">Keeta</li>
-							<li class="filter" data-filter=".digital">Rafeeq</li>
-						</ul>
-					</div>
-				</div>					
-				<div class="portfolio-grid">									
-					<div class="row">									
-						<div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix webtemplate seo">
-							<div class="single-gallery">
-								<img src="assets/img/portfolio/1.jpg" class="img-fluid" alt="gallery Image">
-								<a href="assets/img/portfolio/1.jpg" class="gallery_enlarge_icon"><i class="ti-eye"></i></a>
-								<h4><a href="blog_single.html">View Project</a></h4>
-							</div>
-						</div><!-- End Col -->
-						<div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix branding">
-							<div class="single-gallery">
-								<img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="gallery Image">
-								<a href="assets/img/portfolio/2.jpg" class="gallery_enlarge_icon"><i class="ti-eye"></i></a>
-								<h4><a href="blog_single1.html">View Project</a></h4>
-							</div>
-						</div><!-- End Col -->	
-						<div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item  mix webtemplate digital">
-							<div class="single-gallery">
-								<img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="gallery Image">
-								<a href="assets/img/portfolio/3.jpg" class="gallery_enlarge_icon"><i class="ti-eye"></i></a>
-								<h4><a href="blog_single2.html">View Project</a></h4>
-							</div>
-						</div><!-- End Col -->
-						<div class="col-lg-6 col-sm-6 col-xs-12 portfolio-item  mix digital seo">
-							<div class="single-gallery">
-								<img src="assets/img/portfolio/4.jpg" class="img-fluid" alt="gallery Image">
-								<a href="assets/img/portfolio/4.jpg" class="gallery_enlarge_icon"><i class="ti-eye"></i></a>
-								<h4><a href="blog_single3.html">View Project</a></h4>
-							</div>
-						</div><!-- End Col -->		
-						<div class="col-lg-6 col-sm-6 col-xs-12 portfolio-item mix webtemplate seo">
-							<div class="single-gallery">
-								<img src="assets/img/portfolio/5.jpg" class="img-fluid" alt="gallery Image">
-								<a href="assets/img/portfolio/5.jpg" class="gallery_enlarge_icon"><i class="ti-eye"></i></a>
-								<h4><a href="blog_single4.html">View Project</a></h4>
-							</div>
-						</div><!-- End Col -->									
-					</div><!-- END ROW -->
-					<div class="col-lg-12 text-center">
-						<div class="portfolio_btn">
-							<a class="btn_one" href="blog_single5.html">View More</a>
-						</div>
-					</div><!-- END Col -->
-				</div>
-			</div><!-- END CONTAINER -->
-		</section>
-		<!-- END PORTFOLIO -->		
+<section id="portfolio" class="portfolio_area section-padding">
+    <div class="container-fluid">
+        <div class="section-title text-center">
+            <h2>Our Happy Team</h2>
+            <p style="text-align: justify;">Our happy team is the heart of our success. We work together with dedication, passion, and teamwork to deliver the best services to our customers. Every member is committed to providing fast, reliable, and high-quality service, ensuring customer satisfaction at every step.</p>
+        </div>  
+        <div class="col-lg-12 text-center">
+            <div class="portfolio_filter">
+                <ul>
+                    <li class="active filter" data-filter="all">All</li>
+                    <li class="filter" data-filter=".branding"> Snoonu</li>
+                    <li class="filter" data-filter=".webtemplate">Talabat</li>
+                    <li class="filter" data-filter=".seo">Keeta</li>
+                    <li class="filter" data-filter=".digital">Rafeeq</li>
+                </ul>
+            </div>
+        </div>                  
+        <div class="portfolio-grid">                                        
+            <div class="row">                                   
+                <!-- Item 1 -->
+                <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix webtemplate seo">
+                    <div class="single-gallery">
+                        <img src="assets/img/portfolio/1.jpg" class="img-fluid" alt="Munshi Delivery Team Member 1">
+                        <a href="assets/img/portfolio/1.jpg" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 1"><i class="ti-eye"></i></a>
+                        <h4><a href="https://munshidelivery.com/blog_single.html" aria-label="View Project details for Team Member 1">View Project</a></h4>
+                    </div>
+                </div><!-- End Col -->
+
+                <!-- Item 2 -->
+                <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix branding">
+                    <div class="single-gallery">
+                        <img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="Munshi Delivery Team Member 2">
+                        <a href="assets/img/portfolio/2.jpg" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 2"><i class="ti-eye"></i></a>
+                        <h4><a href="https://munshidelivery.com/blog_single1.html" aria-label="View Project details for Team Member 2">View Project</a></h4>
+                    </div>
+                </div><!-- End Col -->  
+
+                <!-- Item 3 -->
+                <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix webtemplate digital">
+                    <div class="single-gallery">
+                        <img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="Munshi Delivery Team Member 3">
+                        <a href="assets/img/portfolio/3.jpg" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 3"><i class="ti-eye"></i></a>
+                        <h4><a href="https://munshidelivery.com/blog_single2.html" aria-label="View Project details for Team Member 3">View Project</a></h4>
+                    </div>
+                </div><!-- End Col -->
+
+                <!-- Item 4 (col-lg-4 এ পরিবর্তিত) -->
+                <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix digital seo">
+                    <div class="single-gallery">
+                        <img src="assets/img/portfolio/Temu.webp" class="img-fluid" alt="Munshi Delivery Team Member 4">
+                        <a href="assets/img/portfolio/Temu.webp" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 4"><i class="ti-eye"></i></a>
+                        <h4><a href="https://munshidelivery.com/blog_single3.html" aria-label="View Project details for Team Member 4">View Project</a></h4>
+                    </div>
+                </div><!-- End Col -->      
+
+                <!-- Item 5 (col-lg-4 এ পরিবর্তিত) -->
+                <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix webtemplate seo">
+                    <div class="single-gallery">
+                        <img src="assets/img/portfolio/Rafeeq.webp" class="img-fluid" alt="Munshi Delivery Team Member 5">
+                        <a href="assets/img/portfolio/Rafeeq.webp" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 5"><i class="ti-eye"></i></a>
+                        <h4><a href="https://munshidelivery.com/blog_single4.html" aria-label="View Project details for Team Member 5">View Project</a></h4>
+                    </div>
+                </div><!-- End Col -->                                                  
+
+                <!-- Item 6 (৬ষ্ঠ নতুন আইটেম) -->
+                <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix digital">
+                    <div class="single-gallery">
+                        <img src="assets/img/portfolio/All Brand.webp" class="img-fluid" alt="Munshi Delivery Team Member 6">
+                        <a href="assets/img/portfolio/All Brand.webp" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 6"><i class="ti-eye"></i></a>
+                        <h4><a href="https://munshidelivery.com/blog_single5.html" aria-label="View Project details for Team Member 6">View Project</a></h4>
+                    </div>
+                </div><!-- End Col -->
+            </div><!-- END ROW -->
+
+            <div class="col-lg-12 text-center">
+                <div class="portfolio_btn">
+                    <a class="btn_one" href="https://munshidelivery.com/blog_single5.html" aria-label="View More Team Projects">View More</a>
+                </div>
+            </div><!-- END Col -->
+        </div>
+    </div><!-- END CONTAINER -->
+</section>
+<!-- END PORTFOLIO -->
 
 		<!-- SKILLS -->
 		<section class="skills_area section-padding" style="background-image: url(assets/img/bg/skill-bg.jpg);  background-size:cover;background-position:center;">   
