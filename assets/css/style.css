@@ -596,155 +596,176 @@ margin-bottom:30px;
 */
 .portfolio_area{overflow: hidden;}
 .mix{
-	display: none;
+    display: none;
 }
 .portfolio_filter ul {
-	list-style: none;
-	margin-bottom: 60px;
+    list-style: none;
+    margin-bottom: 60px;
 }
 .portfolio_filter ul li {
-	font-weight: 500;
-	text-transform: capitalize;
-	display: inline-block;
-	cursor: pointer;
-	padding: 0px 15px;
-	font-size: 16px;
-	color: #252d35;
-	transition: .5s;
-	margin: 0 3px 0px;
-	border-right: 2px solid #eee;
-	letter-spacing: 0px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    font-size: 16px;
+    color: #252d35;
+    transition: .5s;
+    margin: 0 3px 0px;
+    border-right: 2px solid #eee;
+    letter-spacing: 0px;
 }
 .portfolio_filter ul li:last-child {
-	border-right: 0px;
+    border-right: 0px;
 }
 .portfolio_filter .active {
-	color: #ffaa17;
+    color: #d98200; /* উচ্চ Contrast এর জন্য অরেঞ্জ টোন কিছুটা ডার্ক ও স্পষ্ট করা হলো */
+    font-weight: 700;
 }
 .portfolio-grid{position: relative;}
 .single-gallery{
-	position: relative;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
 }
 .single-gallery:before{
-	position: absolute;
-	content: '';
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-	transition: .5s;
-	opacity: 0;
-	border-radius: 4px;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* আইকন ও টেক্সট স্পষ্ট দেখতে ব্যাকগ্রাউন্ড একটু ডার্ক করা হলো */
+    transition: .5s;
+    opacity: 0;
+    border-radius: 6px;
+    z-index: 1;
 }
+
+/* 🌟 সব ছবিকে সমান সাইজে ফিক্সড করার জন্য এই অংশটি আপডেট করা হয়েছে */
 .single-gallery img{
-	border-radius: 4px;
+    border-radius: 6px;
+    width: 100%;
+    height: 270px; /* সব ছবি ঠিক ২৭০ পিক্সেল হাইটে সমান থাকবে */
+    object-fit: cover; /* ছবি না টেনে অটোমেটিক সুন্দরভাবে ক্রপ করবে */
+    display: block;
+}
+
+.gallery_enlarge_icon{
+    opacity: 0;
+    z-index: 2;
 }
 .gallery_enlarge_icon{
-	opacity: 0;
-}
-.gallery_enlarge_icon{
-	background-color: #ffaa17;
-	color: #fff;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	text-align: center;
-	border-radius: 50%;
-	font-size: 14px;
-	transition: .5s;
+    background-color: #ffaa17;
+    color: #000000; /* Accessibility পাস করার জন্য আইকনের চোখ কালার কালো (#000) করা হলো */
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: .5s;
 }
 
 .gallery_enlarge_icon:hover,
 .gallery_enlarge_icon:focus{
-	background-color: #fff;
-	color: #333;
+    background-color: #000000;
+    color: #ffaa17;
 }
 
 .single-gallery h4 {
-	position: absolute;
-	left: 15px;
-	bottom: 10px;
-	color: #fff;
-	font-size: 17px;
-	font-weight: 600;
-	opacity: 0;
-	transition: .5s;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+    z-index: 2;
 }
-.single-gallery h4 a{color:#fff;}
-.single-gallery h4 a:hover{color:#ffaa17;}
+.single-gallery h4 a{
+    color: #ffffff;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.8);
+}
+.single-gallery h4 a:hover{
+    color: #ffaa17;
+}
 .portfolio-item{
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 .gallery-btn{
-	background-color: #fc5b62;
-	border: 1px solid #fc5b62;
-	border-radius: 4px;
-	color: #fff;
-	font-size: 15px;
-	padding: 13px 30px;
-	text-transform: capitalize;
-	transition: all 0.3s ease 0s;
-	font-weight: 600;
-	letter-spacing: 1px;
+    background-color: #d9383e; /* কন্ট্রাস্ট ভালো পাওয়ার জন্য ডার্ক রেড */
+    border: 1px solid #d9383e;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    padding: 13px 30px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .gallery-btn:hover,
 .gallery-btn:focus{
-	background-color: #211E3B;
-	border-color: #211E3B;
-	color: #fff;
+    background-color: #211E3B;
+    border-color: #211E3B;
+    color: #fff;
 }
 .single-gallery:hover:before,
 .single-gallery:hover .gallery_enlarge_icon,
 .single-gallery:hover h4{
-	opacity: 1;
+    opacity: 1;
 }
 .portfolio_btn{margin-top: 30px;}
-.portfolio_btn a{}
+
 /*START PORTFOLIO SINGLE PAGE DESIGN*/
 .portfolio_project_area{background:#f9fcff;padding-bottom: 50px;}
 .single_project {
-	background: #fff;
-	padding: 40px;
-	margin-bottom: 30px;
-	border-radius: 10px;
-	overflow: hidden;
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .single_project img{
-width:500px;
-float:left;
-margin-right:30px;
+    width: 100%;
+    max-width: 500px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 6px;
 }
 .single_project h1 {
-	font-size: 80px;
-	margin-bottom: 10px;
-	color: #ffaa17;
+    font-size: 80px;
+    margin-bottom: 10px;
+    color: #d98200;
 }
 .single_project h2{margin-bottom:20px;}
 .single_project p{margin-bottom:20px;}
-.single_project a{}
 
 .single_project_area{background:#f9fcff;padding-bottom:50px;}
 .project_dec {
-	background: #fff none repeat scroll 0 0;
-	box-shadow: 0 10px 40px -10px rgba(0,64,128,.08);
-	margin-bottom: 30px;
-	padding: 40px;
-	border-radius: 10px;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 10px 40px -10px rgba(0,64,128,.08);
+    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 10px;
 }
 .project_dec img {
-margin-right: 20px;
-width: 600px;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 6px;
 }
 .about_project h4 {
-	border-bottom: 1px solid #eee;
-	padding: 10px 0;
-	font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-weight: 600;
 }
 .about_project p {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 .about_project_details { margin-bottom: 20px }
 .about_project_details ul {
@@ -754,11 +775,11 @@ width: 600px;
 }
 .about_project_details ul li { padding: 5px 0 }
 .about_project_details ul li i {
-    color: #ffaa17;
+    color: #d98200;
     margin-right: 10px;
 }
 .about_project_details ul li a {
-    color: #ffaa17;
+    color: #d98200;
     font-weight: 700;
 }
 .about_project_details ul li a:hover {text-decoration: underline;}
@@ -1601,13 +1622,13 @@ width:150px;
 .subs_btn {
 	background: #ffaa17;
 	border:2px solid #ffaa17;
-	color: #fff;
+	color: #000000;
 	padding: 12px;
 	transition: 0.3s;
 }
 .subs_btn:hover{
-background: #fff;
-border:2px solid #fff;
+background: #000000;
+border:2px solid #000000;
 color:#ffaa17;
 }
 .social_profile {margin-top:10px;}
@@ -1899,6 +1920,52 @@ position: relative;
 .social_profile ul li a:hover {
     transform: translateY(-3px);
     opacity: 0.9;
+}
+
+/* ==========================================
+   Sticky Header & Mobile Menu Alignment Fix
+   ========================================== */
+@media only screen and (max-width: 991px) {
+
+    /* ১. স্ক্রোল স্টিকি হেডার এবং সাধারণ হেডারে ফ্লেক্স স্পেসিং */
+    .header-top,
+    .navbar-header,
+    .main-menu,
+    .menu_scroll,
+    .navbar-fixed-top {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* ২. সাদা ব্যাকগ্রাউন্ডে লোগোর সাইজ নিয়ন্ত্রিত রাখা */
+    .menu_scroll .navbar-brand img,
+    .menu_scroll .logo img,
+    .navbar-brand img, 
+    .logo img, 
+    .site-logo img {
+        max-height: 35px !important; /* লোগোর হাইট কিছুটা ছোট করা */
+        max-width: 65% !important;  /* যাতে ডানে মেনুর জন্য ৩০%+ জায়গা খালি থাকে */
+        width: auto !important;
+        height: auto !important;
+    }
+
+    /* ৩. হ্যামবার্গার বাটনকে বাধ্য হয়ে একদম ডান প্রান্তে রাখা */
+    .slicknav_menu,
+    .navbar-toggler,
+    .navbar-toggle,
+    .menu-toggler {
+        margin-left: auto !important; /* বামের লোগোকে ধাক্কা দিয়ে নিজেকে ডানে ঠেলে দেবে */
+        margin-right: 0 !important;
+        position: relative !important;
+        right: 0 !important;
+        top: 0 !important;
+        transform: none !important;
+    }
 }
 /* ----------------------------------------------------------------------------------------
 * 21.END SERVICE PAGES DESIGN
