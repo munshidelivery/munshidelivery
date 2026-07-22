@@ -1967,60 +1967,6 @@ position: relative;
         transform: none !important;
     }
 }
-/* Blog Card Alignment, Black Color & Border Fix */
-.blog_area .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.home_single_blog {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: #ffffff;
-}
-
-.home_blog_content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 20px;
-}
-
-/* Title Color Fix: Dark Black */
-.home_blog_content .blog_title_info h3 a {
-    color: #222222 !important;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-.home_blog_content .blog_title_info h3 a:hover {
-    color: #f7941d !important; /* hover dynamic color */
-}
-
-/* Border Line Fix: Date and Category section */
-.blog_title_info {
-    border-bottom: 1px solid #eeeeee !important;
-    padding-bottom: 12px;
-    margin-bottom: 15px;
-}
-
-/* Paragraph & Button alignment */
-.home_blog_content p {
-    flex-grow: 1;
-}
-
-.home_b_btn {
-    margin-top: auto;
-    align-self: center;
-}
-
-.footer .single_footer h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-weight: 600;
-    font-size: 17px; /* আগের h4 এর সাইজ অনুযায়ী */
-}
 /* ----------------------------------------------------------------------------------------
 * 21.END SERVICE PAGES DESIGN
 * ----------------------------------------------------------------------------------------
