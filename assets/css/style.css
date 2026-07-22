@@ -2014,6 +2014,13 @@ position: relative;
     margin-top: auto;
     align-self: center;
 }
+
+.footer .single_footer h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 17px; /* আগের h4 এর সাইজ অনুযায়ী */
+}
 /* ----------------------------------------------------------------------------------------
 * 21.END SERVICE PAGES DESIGN
 * ----------------------------------------------------------------------------------------
