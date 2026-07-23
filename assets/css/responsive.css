@@ -86,8 +86,107 @@ margin: auto;
 @media only screen and (max-width:375px) {
 
 }
+/* --------------------------------------------------
+   FORCE MENU TOGGLE TO THE RIGHT ON MOBILE
+   -------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+    .site-navbar {
+        position: relative !important;
+    }
 
+    .site-navbar .container,
+    .site-navbar .container-fluid {
+        position: relative !important;
+    }
 
+    .site-navbar .site-logo {
+        float: left !important;
+        position: relative !important;
+        left: 0 !important;
+    }
+
+    .site-navbar .site-menu-toggle {
+        position: absolute !important;
+        right: 15px !important;
+        top: 50% !important;
+        -webkit-transform: translateY(-50%) !important;
+        -ms-transform: translateY(-50%) !important;
+        transform: translateY(-50%) !important;
+        margin: 0 !important;
+        float: none !important;
+        z-index: 2002 !important;
+    }
+}
+
+/* --------------------------------------------------
+   FIX SERVICE / FEATURE BOX OVERFLOW ON MOBILE
+   -------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    /* কন্টেইনার এবং র-এর ওভারফ্লো ঠিক করা */
+    .single_feature, 
+    .single_service,
+    .feature_content,
+    .service_box {
+        height: auto !important; /* নির্দিষ্ট হাইট উঠিয়ে অটো করা */
+        min-height: 100% !important;
+        margin-bottom: 25px !important;
+        overflow: hidden;
+    }
+
+    /* কলামগুলোকে মোবাইলে ফুল উইডথ (১ কলাম) করা */
+    .single_feature_col,
+    .single_service_col {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* প্যাডিং ও টেক্সট এলাইনমেন্ট ঠিক করা */
+    .single_feature p,
+    .single_service p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+/* --------------------------------------------------
+   FIX BLOG / NEWS GRID ON MOBILE (STACK 1 COLUMN)
+   -------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+    /* ব্লগের র (Row) ও গ্রিড ঠিক করা */
+    .single_blog,
+    .blog_item,
+    .single-blog,
+    .single_blog_item {
+        margin-bottom: 30px !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* কলামগুলোকে মোবাইলে ৩ কলামের বদলে ১ কলাম (100% Width) করা */
+    .blog_area .col-lg-4,
+    .blog_area .col-md-4,
+    .blog_area .col-sm-6,
+    .blog_section [class*="col-"] {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* টেক্সট এলাইনমেন্ট এবং স্পেসিং সুন্দর করা */
+    .single_blog h2,
+    .single_blog h3,
+    .single_blog h4 {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+    }
+
+    .single_blog p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        text-align: left !important; /* অতিরিক্ত জাস্টিফাইড ফন্ট স্পেসিং বন্ধ করতে */
+    }
+}
 
 
 
