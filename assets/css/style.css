@@ -1554,7 +1554,7 @@ width:150px;
 	font-size: 17px;
 }
 .single_footer p{color:#fff;}
-.single_footer ul {
+.single_footer ul { 
     margin: 0;
     padding: 0;
     list-style: none;
@@ -1967,6 +1967,7 @@ position: relative;
         transform: none !important;
     }
 }
+
 /* ----------------------------------------------------------------------------------------
 * 21.END SERVICE PAGES DESIGN
 * ----------------------------------------------------------------------------------------
