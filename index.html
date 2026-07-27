@@ -2,78 +2,93 @@
 <html lang="en">
 
 	<head>
-		<!-- Meta -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="Looking for the best delivery partner? Munshi Delivery Services offers fast, secure, and affordable home delivery and courier logistics. Book your parcel today!">
-		<meta name="keywords" content="Munshi Delivery Services,Snoonu partner, Talabat partner, Rafeeq partner, Keeta partner, delivery service in Qatar, food delivery Doha, parcel delivery Qatar, courier services Muaither, fast delivery Qatar, rider service Doha, Munshi Business Solution, agency, business, corporate, creative, html5, modern, multipurpose, One Page, parallax, startup">		
-		<!-- SITE TITLE -->
-		<title>Munshi Delivery Services | Fast, Safe & Reliable Courier</title>
-		<script>
-    //  .html or index.html removed
-    var path = window.location.pathname;
-    if (path.endsWith('.html')) {
-        var newPath = path.replace(/\.html$/, '');
-        if (newPath.endsWith('/index')) {
-            newPath = newPath.replace(/\/index$/, '/');
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Looking for the best delivery partner? Munshi Delivery Services offers fast, secure, and affordable home delivery and courier logistics. Book your parcel today!">
+    <meta name="keywords" content="Munshi Delivery Services,Snoonu partner, Talabat partner, Rafeeq partner, Keeta partner, delivery service in Qatar, food delivery Doha, parcel delivery Qatar, courier services Muaither, fast delivery Qatar, rider service Doha, Munshi Business Solution, agency, business, corporate, creative, html5, modern, multipurpose, One Page, parallax, startup">       
+    
+    <!-- SITE TITLE -->
+    <title>Munshi Delivery Services | Fast, Safe & Reliable Courier</title>
+
+    <!-- CRITICAL PERFORMANCE FIX: Hero Image Preload (LCP 100/100 করার জন্য) -->
+    <link rel="preload" as="image" href="assets/img/bg/home-bg.webp" fetchpriority="high">
+
+    <script>
+        // .html or index.html removed
+        var path = window.location.pathname;
+        if (path.endsWith('.html')) {
+            var newPath = path.replace(/\.html$/, '');
+            if (newPath.endsWith('/index')) {
+                newPath = newPath.replace(/\/index$/, '/');
+            }
+            window.history.replaceState(null, '', newPath);
         }
-        window.history.replaceState(null, '', newPath);
+    </script>
+
+    <!-- AI Communications code -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "DeliveryService",
+    "name": "Munshi Delivery Services",
+    "url": "https://www.munshidelivery.com/",
+    "logo": "https://www.munshidelivery.com/assets/img/logo.webp",
+    "description": "Professional delivery and logistics services in Muaither,Al Rayyan, Doha, Qatar.",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Muaither",
+        "addressLocality": "Doha",
+        "addressCountry": "QA"
+    },
+    "areaServed": "Qatar"
     }
-</script>
+    </script>
+    <!-- AI Communications code end -->
 
-	<!-- AI Communications code -->
-		<script type="application/ld+json">
-		{
-		"@context": "https://schema.org",
-		"@type": "DeliveryService",
-		"name": "Munshi Delivery Services",
-		"url": "https://www.munshidelivery.com/",
-		"logo": "https://www.munshidelivery.com/assets/img/logo.png",
-		"description": "Professional delivery and logistics services in Muaither,Al Rayyan, Doha, Qatar.",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "Muaither",
-			"addressLocality": "Doha",
-			"addressCountry": "QA"
-		},
-		"areaServed": "Qatar"
-		}
-		</script>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="any" href="assets/img/favicon.png">
 
-		 <!-- AI Communications code end -->
+    <!-- Google Fonts Optimization (font-display: swap সহ) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap"> 
 
-		<!-- favicon -->
-		<link rel="icon" type="image/png" sizes="any" href="assets/img/favicon.png">
-		<!-- Latest Bootstrap min CSS -->
-		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
-		<!-- Google Font -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800"> 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600">			
-		<!-- Font Awesome CSS -->
-		<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/fonts/themify-icons.css">
-		<!--- owl carousel Css-->
-		<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
-		<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
-		<!--materialdesignicons Css-->
-        <link rel="stylesheet" href="assets/css/fonts.css">		
-		<!-- animate CSS -->
-		<link rel="stylesheet" href="assets/css/animate.css">					
-		<!-- MAGNIFIC CSS -->
-		<link rel="stylesheet" href="assets/css/magnific-popup.css">					
-		<!-- Style CSS -->						
-		<link rel="stylesheet" href="assets/css/menu.css">			
-		<link rel="stylesheet" href="assets/css/style.css">			
-		<link rel="stylesheet" href="assets/css/responsive.css">			
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">       
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons.css">
+
+    <!--- owl carousel Css-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+
+    <!--materialdesignicons Css-->
+    <link rel="stylesheet" href="assets/css/fonts.css">     
+
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">                   
+
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">                    
+
+    <!-- Style CSS -->                      
+    <link rel="stylesheet" href="assets/css/menu.css">          
+    <link rel="stylesheet" href="assets/css/style.css">         
+    <link rel="stylesheet" href="assets/css/responsive.css">            
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 	
     <body data-spy="scroll" data-offset="80">
 
@@ -100,7 +115,7 @@
 		  <div class="container">
 			<div class="row align-items-center">       
 			  <div class="col-6 col-xl-2">
-				<h1 class="mb-0 site-logo"><a href="index.html"><img src="assets/img/logo.png" alt="Munshi Delivery Services Logo"
+				<h1 class="mb-0 site-logo"><a href="index.html"><img src="assets/img/logo.webp" alt="Munshi Delivery Services Logo"
 					style="width:320px; display:inline-block; transition:0.3s ease;"
 							onmouseover="this.style.animation='shake 0.5s infinite';"
 							onmouseout="this.style.animation='none';"></a></h1>
@@ -328,8 +343,8 @@
                 <!-- Item 1 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix webtemplate seo">
                     <div class="single-gallery">
-                        <img src="assets/img/portfolio/1.jpg" class="img-fluid" alt="Munshi Delivery Team Member 1">
-                        <a href="assets/img/portfolio/1.jpg" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 1"><i class="ti-eye"></i></a>
+                        <img src="assets/img/portfolio/snoonu_office team.webp" class="img-fluid" alt="Snoonu_Office Team Member">
+                        <a href="assets/img/portfolio/snoonu_office team.webp" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 1"><i class="ti-eye"></i></a>
                         <h3><a href="https://munshidelivery.com/blog_single.html" aria-label="View Project details for Team Member 1">View Project</a></h3>
                     </div>
                 </div><!-- End Col -->
@@ -337,8 +352,8 @@
                 <!-- Item 2 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix branding">
                     <div class="single-gallery">
-                        <img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="Munshi Delivery Team Member 2">
-                        <a href="assets/img/portfolio/2.jpg" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 2"><i class="ti-eye"></i></a>
+                        <img src="assets/img/portfolio/snoonu_team.webp" class="img-fluid" alt="Snoonu_Team 2">
+                        <a href="assets/img/portfolio/snoonu_team.webp" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 2"><i class="ti-eye"></i></a>
                         <h3><a href="https://munshidelivery.com/blog_single1.html" aria-label="View Project details for Team Member 2">View Project</a></h3>
                     </div>
                 </div><!-- End Col -->  
@@ -346,8 +361,8 @@
                 <!-- Item 3 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item mix webtemplate digital">
                     <div class="single-gallery">
-                        <img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="Munshi Delivery Team Member 3">
-                        <a href="assets/img/portfolio/3.jpg" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 3"><i class="ti-eye"></i></a>
+                        <img src="assets/img/portfolio/talabat_team.webp" class="img-fluid" alt="Munshi Delivery Team Member 3">
+                        <a href="assets/img/portfolio/talabat_team.webp" class="gallery_enlarge_icon" aria-label="View enlarged image of team member 3"><i class="ti-eye"></i></a>
                         <h3><a href="https://munshidelivery.com/blog_single2.html" aria-label="View Project details for Team Member 3">View Project</a></h3>
                     </div>
                 </div><!-- End Col -->
@@ -391,7 +406,7 @@
 <!-- END PORTFOLIO -->
 
 		<!-- SKILLS -->
-		<section class="skills_area section-padding" style="background-image: url(assets/img/bg/skill-bg.jpg);  background-size:cover;background-position:center;">   
+		<section class="skills_area section-padding" style="background-image: url(assets/img/bg/skill-bg.webp);  background-size:cover;background-position:center;">   
 			<div class="container">				
 				<div class="row">					
 					<div class="col-lg-5 col-sm-8 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
@@ -638,7 +653,7 @@
 				<div class="row footer_bg">						
 					<div class="col-lg-3 col-sm-6 col-xs-12">
 						<div class="footer_logo">
-							<img src="assets/img/logo.png" alt="Munshi Delivery Services Logo"
+							<img src="assets/img/logo.webp" alt="Munshi Delivery Services Logo"
 							style="width:300px; display:inline-block;"
 									onmouseover="this.style.animation='footerShake 0.6s infinite';"
 									onmouseout="this.style.animation='none';">
@@ -722,35 +737,49 @@
 		<!-- END FOOTER -->	
 
 		<!-- Latest jQuery -->
-			<script src="assets/js/jquery-1.12.4.min.js"></script>
-		<!-- Latest compiled and minified Bootstrap -->
-			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-		<!-- modernizer JS -->		
-			<script src="assets/js/modernizr-2.8.3.min.js"></script>																		
-		<!-- owl-carousel min js  -->
-			<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>					
-		<!-- magnific-popup js -->               
-			<script src="assets/js/jquery.magnific-popup.min.js"></script>			
-		<!-- jquery mixitup js -->   
-			<script src="assets/js/jquery.mixitup.js"></script>			
-		<!-- jquery appear js -->
-			<script src="assets/js/jquery.appear.js"></script>							
-		<!-- countTo js -->
-			<script src="assets/js/jquery.inview.min.js"></script>	
-		<!-- stellar js -->
-			<script src="assets/js/jquery.stellar.min.js"></script>			
-		<!-- WOW - Reveal Animations When You Scroll -->
-			<script src="assets/js/wow.min.js"></script>	
-		<!-- Menu js -->
-			<script src="assets/js/menu.js"></script>																				
-			<script src="assets/js/jquery.sticky.js"></script>		
-		<!-- form contact js -->																				
-			<script src="assets/js/form-contact.js"></script>				
-		<!-- scrolltopcontrol js -->																				
-			<script src="assets/js/scrolltopcontrol.js"></script>																				
-		<!-- scripts js -->
-			<script src="assets/js/scripts.js"></script>
-		<!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
-			<script src="https://elfsightcdn.com/platform.js" async></script>		
+        <script src="assets/js/jquery-1.12.4.min.js" defer></script>
+
+        <!-- Latest compiled and minified Bootstrap -->
+        <script src="assets/bootstrap/js/bootstrap.min.js" defer></script>
+
+        <!-- modernizer JS -->      
+        <script src="assets/js/modernizr-2.8.3.min.js" defer></script>                                                                                
+
+        <!-- owl-carousel min js  -->
+        <script src="assets/owlcarousel/js/owl.carousel.min.js" defer></script>                   
+
+        <!-- magnific-popup js -->               
+        <script src="assets/js/jquery.magnific-popup.min.js" defer></script>          
+
+        <!-- jquery mixitup js -->   
+        <script src="assets/js/jquery.mixitup.js" defer></script>         
+
+        <!-- jquery appear js -->
+        <script src="assets/js/jquery.appear.js" defer></script>                                  
+
+        <!-- countTo js -->
+        <script src="assets/js/jquery.inview.min.js" defer></script>  
+
+        <!-- stellar js -->
+        <script src="assets/js/jquery.stellar.min.js" defer></script>         
+
+        <!-- WOW - Reveal Animations When You Scroll -->
+        <script src="assets/js/wow.min.js" defer></script>    
+
+        <!-- Menu js -->
+        <script src="assets/js/menu.js" defer></script>                                                                                              
+        <script src="assets/js/jquery.sticky.js" defer></script>      
+
+        <!-- form contact js -->                                                                                                                    
+        <script src="assets/js/form-contact.js" defer></script>               
+
+        <!-- scrolltopcontrol js -->                                                                                                                    
+        <script src="assets/js/scrolltopcontrol.js" defer></script>                                                                                                                    
+
+        <!-- scripts js -->
+        <script src="assets/js/scripts.js" defer></script>
+
+        <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+        <script src="https://elfsightcdn.com/platform.js" defer></script>       
     </body>
 </html>
